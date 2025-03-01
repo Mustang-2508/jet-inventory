@@ -1,0 +1,52 @@
+@startuml
+
+class FighterJet{
+    -id : Long
+    -model : String
+    -maxSpeed : Double
+    -operatedBy : Operator
+    -manufacturedBy : Company
+
+    + saveMultiRoleFighter()
+    + saveInterceptor()
+
+    +getMultiRoleFighter()
+    +getInterceptor()
+
+    + updateCompany()
+
+    + deleteById()
+
+}
+
+class MultiRoleFighter{
+    - stealthCapacity : Boolean
+    - generation : Integer
+}
+
+class Interceptor{
+    - climbRate : Double
+    - missileCount : Integer
+
+}
+
+
+class Company{
+    - id : Long
+    - companyName : String
+    - foundedOn : Date 
+
+    + saveCompany()
+    + deleteCompany()
+}
+
+
+FighterJet  "*" -- "1"  Company : Manufactures
+
+MultiRoleFighter <|-- FighterJet 
+Interceptor <|-- FighterJet
+
+
+
+@enduml
+
