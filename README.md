@@ -3,6 +3,7 @@
 ## Table of Contents
 - [Tech Stack and Tools](#tech-stack-and-tools)
 - [How to Run the Application](#how-to-run-the-application)
+- 
 - [API Documentation](#api-documentation-)
 - [Key Concepts Used in This Application](#key-concepts-used-in-this-application)
 
@@ -33,6 +34,9 @@
 5. Run Tests : `mvn test`
 6. Run: `mvn spring-boot:run`
 
+## **Class Diagram** ##
+- **Please refer file for class diagram**
+        [entities.puml](entities.puml)
 
 ## **API Documentation** ##
 - **Please refer below link for API documentation:**
